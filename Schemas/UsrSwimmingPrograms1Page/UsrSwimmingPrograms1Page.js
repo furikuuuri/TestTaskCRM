@@ -22,7 +22,78 @@ define("UsrSwimmingPrograms1Page", [], function() {
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			asyncValidate: function(callback, scope) {
+				this.callParent([function(response) {
+					if (!this.validateResponse(response)) {
+						return;
+					}
+					Terrasoft.chain(
+						function(next){
+							this.getMaxCountActiveSwimmingLessons(function(maxCount) {//Получение сис настройки
+									next(maxCount);
+							},this)
+						},
+						function(next,maxCount) {
+							this.validateDailySwimmingPrograms(function(response) {//Валидация ежедневных активных программ
+								if (this.validateResponse(response)) {
+									next();
+								}
+							},maxCount, this);
+						},
+						function() {
+							callback.call(scope, response);
+						}, this);
+				}, this]);
+			},
+			getMaxCountActiveSwimmingLessons:function(callback,scope){
+				Terrasoft.SysSettings.querySysSettings("UsrMaxCountActiveSwimmingLessons", function(response) {
+					var maxCount = 0;
+					if(response && response.UsrMaxCountActiveSwimmingLessons){
+						maxCount = response.UsrMaxCountActiveSwimmingLessons
+					}
+					callback.call(scope || this, maxCount);
+				}, this);
+			},
+			validateDailySwimmingPrograms: function(callback,maxCount,scope) {
+				var result = {
+					success :true
+				};
+				if(!scope.isSwimmingProgrammDailyAndActive(scope)){
+					callback.call(scope || this, result);
+					return;
+				}
+				
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", { rootSchemaName: "UsrSwimmingPrograms" });
+
+				esq.filters.addItem(esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL, "UsrSwimmingProgramsPeriodicity", "05716D35-1CE4-4736-8EBC-5372CCAF6E63"));
+
+				esq.filters.addItem(esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL, "UsrIsActive", true));
+
+				esq.getEntityCollection(function(response) {
+					if (response.success && response.collection.getCount() >= maxCount) {
+						var filteredCollectionById = response.collection.filter(item=>item.get("Id") == scope.get("Id"));
+						if(filteredCollectionById.collection.length == 0){
+							scope.showInformationDialog("Допускается не более " + maxCount + " активных ежедневных программ плавания");
+							result.success = false;
+						}
+					}
+					callback.call(scope || this, result);
+				}, this);
+			},
+			isSwimmingProgrammDailyAndActive:function(scope){//Проверка на ежедневность и активность текущего занятия
+				var isActive 	= scope.get("UsrIsActive");
+				var isDaily 	= false;
+				var peridicioty = scope.get("UsrSwimmingProgramsPeriodicity");
+
+				if(peridicioty?.value?.toUpperCase() === "05716D35-1CE4-4736-8EBC-5372CCAF6E63"){
+					isDaily = true;
+				}
+				return isDaily && isActive;
+			},
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
