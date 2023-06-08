@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "6472e233-19df-41db-a746-8d1f51c0dc9e",
+    "Name": "UsrSwimmingPrograms",
+    "ModifiedOnUtc": "\/Date(1686248457000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Программы плавания"
+  }
+}
