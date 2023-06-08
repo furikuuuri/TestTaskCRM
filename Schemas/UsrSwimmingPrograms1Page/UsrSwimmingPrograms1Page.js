@@ -11,6 +11,14 @@ define("UsrSwimmingPrograms1Page", [], function() {
 					"masterColumn": "Id",
 					"detailColumn": "UsrSwimmingPrograms"
 				}
+			},
+			"UsrSwimmingLessonsSchemaDetail": {
+				"schemaName": "UsrSchema1dc00947Detail",
+				"entitySchemaName": "UsrSwimmingLessons",
+				"filter": {
+					"detailColumn": "UsrSwimmingProgram",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
@@ -139,6 +147,17 @@ define("UsrSwimmingPrograms1Page", [], function() {
 				},
 				"parentName": "Tabs",
 				"propertyName": "tabs",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "UsrSwimmingLessonsSchemaDetail",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "TabGeneralInformationTabLabel",
+				"propertyName": "items",
 				"index": 0
 			},
 			{

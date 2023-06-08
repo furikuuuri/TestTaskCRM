@@ -42,6 +42,7 @@
   "A5": "babbd1e6-84a7-4afb-87a5-8ba4b3476653",
   "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
   "S4": "16be3651-8fe2-4159-8dd0-a803d4683dd3",
+  "E2": 1,
   "E6": true,
   "E17": "UsrTrainerId",
   "E18": "UsrTrainerName"
@@ -52,9 +53,35 @@
   "A3": "a3b480da-458b-4809-b75d-3166d9c61b92",
   "A4": "a3b480da-458b-4809-b75d-3166d9c61b92",
   "A5": "babbd1e6-84a7-4afb-87a5-8ba4b3476653",
-  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "E2": 1
 }
-~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","225a2f12-1df2-8db8-0734-05f7732c65dc","43f11717-bf9a-5241-d8b5-b134a674ad89","5238972d-7a4f-1412-e9de-0ea88103993e","57f01101-ea4c-ee7d-b9e5-fe749b28c2cf"]
++ MetaData.Schema.D2 {
+  "UId": "c75ad4a0-cf89-e3ea-9ffb-bfe552f29474",
+  "A2": "UsrSwimmingProgram",
+  "A3": "a3b480da-458b-4809-b75d-3166d9c61b92",
+  "A4": "a3b480da-458b-4809-b75d-3166d9c61b92",
+  "A5": "babbd1e6-84a7-4afb-87a5-8ba4b3476653",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "6472e233-19df-41db-a746-8d1f51c0dc9e",
+  "E6": true,
+  "E17": "UsrSwimmingProgramId",
+  "E18": "UsrSwimmingProgramUsrName"
+}
++ MetaData.Schema.D2 {
+  "UId": "1d559e82-a197-c6a2-5091-6d3980b3e037",
+  "A2": "UsrLessonState",
+  "A3": "a3b480da-458b-4809-b75d-3166d9c61b92",
+  "A4": "a3b480da-458b-4809-b75d-3166d9c61b92",
+  "A5": "babbd1e6-84a7-4afb-87a5-8ba4b3476653",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "5d8c8fcb-afea-41fe-8352-227f41e41542",
+  "E2": 1,
+  "E6": true,
+  "E17": "UsrLessonStateId",
+  "E18": "UsrLessonStateName"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","225a2f12-1df2-8db8-0734-05f7732c65dc","43f11717-bf9a-5241-d8b5-b134a674ad89","5238972d-7a4f-1412-e9de-0ea88103993e","57f01101-ea4c-ee7d-b9e5-fe749b28c2cf","c75ad4a0-cf89-e3ea-9ffb-bfe552f29474","1d559e82-a197-c6a2-5091-6d3980b3e037"]
 = MetaData.Schema.D20.A2 "UsrSwimmingLessonsEvents"
 - MetaData.Schema.EG1.B6
 - MetaData.Schema.EG1.BK29

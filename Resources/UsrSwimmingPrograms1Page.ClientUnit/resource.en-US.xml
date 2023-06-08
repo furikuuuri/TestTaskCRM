@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Программы плавания&quot;" />
 			<Item Name="LocalizableStrings.TabGeneralInformationTabLabelTabCaption.Value" Value="Основная информация" />
+			<Item Name="LocalizableStrings.UsrSwimmingLessonsSchemaDetailDetailCaptionOnPage.Value" Value="Занятия в бассейне" />
 		</Items>
 	</Group>
 </Resources>
