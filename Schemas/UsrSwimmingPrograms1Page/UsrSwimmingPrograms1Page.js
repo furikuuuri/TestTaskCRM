@@ -1,4 +1,4 @@
-define("UsrSwimmingPrograms1Page", [], function() {
+define("UsrSwimmingPrograms1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilities) {
 	return {
 		entitySchemaName: "UsrSwimmingPrograms",
 		attributes: {},
@@ -23,6 +23,26 @@ define("UsrSwimmingPrograms1Page", [], function() {
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
+			getActions: function() {
+				var actionMenuItems = this.callParent(arguments);
+				actionMenuItems.addItem(this.getButtonMenuItem({
+					Type: "Terrasoft.MenuSeparator",
+					Caption: ""
+				}));
+				
+				actionMenuItems.addItem(this.getButtonMenuItem({
+					"Caption": "Добавить занятия",
+					"Click": {bindTo: "addSwimmingLessons"},
+					"Enabled": true
+				}));
+				return actionMenuItems;
+			},
+			addSwimmingLessons:function(){
+				var data = {
+					UsrSwimmingProgramId: this.get("Id")
+				};
+				ProcessModuleUtilities.runProcess("UsrAddSwimmingLessons", data, this.hideBodyMask);
+			},
 			asyncValidate: function(callback, scope) {
 				this.callParent([function(response) {
 					if (!this.validateResponse(response)) {
