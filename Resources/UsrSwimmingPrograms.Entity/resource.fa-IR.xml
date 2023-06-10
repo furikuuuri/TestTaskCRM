@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.UsrName.Caption" Value="نام" />
 			<Item Name="Columns.UsrNotes.Caption" Value="یادداشت ها" />
+			<Item Name="EventsProcessSchema.Caption" Value="هدف پایه" />
 		</Items>
 	</Group>
 </Resources>

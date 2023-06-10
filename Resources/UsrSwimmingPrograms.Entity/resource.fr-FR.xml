@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.UsrName.Caption" Value="Nom" />
 			<Item Name="Columns.UsrNotes.Caption" Value="Notes" />
+			<Item Name="EventsProcessSchema.Caption" Value="Base objet" />
 		</Items>
 	</Group>
 </Resources>

@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.UsrName.Caption" Value="Tên" />
 			<Item Name="Columns.UsrNotes.Caption" Value="Các ghi chú" />
+			<Item Name="EventsProcessSchema.Caption" Value="Đối tượng cơ bản" />
 		</Items>
 	</Group>
 </Resources>

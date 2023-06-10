@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.UsrName.Caption" Value="الاسم" />
 			<Item Name="Columns.UsrNotes.Caption" Value="الملاحظات" />
+			<Item Name="EventsProcessSchema.Caption" Value="الكائن الأساسي" />
 		</Items>
 	</Group>
 </Resources>

@@ -10,7 +10,11 @@
 			<Item Name="Columns.UsrNotes.Caption" Value="Notes" />
 			<Item Name="Columns.UsrOwner.Caption" Value="Ответсвенный" />
 			<Item Name="Columns.UsrSwimmingProgramsPeriodicity.Caption" Value="Периодичность" />
-			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask1_18b6b1f27e2c409eb8a2de095a9f5127.Caption" Value="Обработка перед сохранением" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage1_aae2306fbd0947ebadf35d2aa5c6bb40.Caption" Value="Перед сохранением" />
+			<Item Name="EventsProcessSchema.Caption" Value="Программы плавания" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_7a26bbe185054cc8bbf9981712c941be.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_7a26bbe185054cc8bbf9981712c941be.Lanes.Lane_b07d1be78f6c4f0dbefb25e5662cdd97.Caption" Value="Lane 1" />
 		</Items>
 	</Group>
 </Resources>
