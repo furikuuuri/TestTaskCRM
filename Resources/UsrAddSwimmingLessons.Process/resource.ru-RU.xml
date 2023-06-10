@@ -64,9 +64,9 @@
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
 			<Item Name="Parameters.ProcessSchemaParameter1.Caption" Value="Текущее кол-во добавленных записей" />
-			<Item Name="Parameters.ProcessSchemaParameter1.DisplayValue" Value="1" />
+			<Item Name="Parameters.ProcessSchemaParameter1.DisplayValue" Value="0" />
 			<Item Name="Parameters.UsrCountOfLessons.Caption" Value="Кол-во добавляемых занятий" />
-			<Item Name="Parameters.UsrCountOfLessons.DisplayValue" Value="3" />
+			<Item Name="Parameters.UsrCountOfLessons.DisplayValue" Value="8" />
 			<Item Name="Parameters.UsrSwimmingProgramId.Caption" Value="Программа плавания" />
 		</Items>
 	</Group>

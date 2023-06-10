@@ -29,11 +29,13 @@
 			<Item Name="BaseElements.AddDataUserTask3.Parameters.RecordAddMode.Caption" Value="Record adding mode" />
 			<Item Name="BaseElements.AddDataUserTask3.Parameters.RecordDefValues.Caption" Value="Set column values" />
 			<Item Name="BaseElements.AddDataUserTask3.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Текущее кол-во &lt; нужное" />
 			<Item Name="BaseElements.ConditionalSequenceFlow3.Caption" Value="Периодичность = ежемесячно?" />
 			<Item Name="BaseElements.ConditionalSequenceFlow4.Caption" Value="Периодичность = еженедельно" />
 			<Item Name="BaseElements.ConditionalSequenceFlow5.Caption" Value="Периодичность = еждневно" />
 			<Item Name="BaseElements.DefaultSequenceFlow1.Caption" Value="Условный поток 2" />
 			<Item Name="BaseElements.DefaultSequenceFlow2.Caption" Value="Периодичность не указана" />
+			<Item Name="BaseElements.FormulaTask1.Caption" Value="Инкремент текущего кол-ва добавляемых записей" />
 			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="Читать программу плавания" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
@@ -55,6 +57,7 @@
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Обновить страницу" />
 			<Item Name="Caption" Value="Бизнес-процесс 1" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
