@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "9960fc16-db21-411b-8f72-85321740c170",
+    "Name": "UsrAddSwimmingLessons",
+    "ModifiedOnUtc": "\/Date(1686404166000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Добавить занятия в бассейне для программы плавания"
+  }
+}
