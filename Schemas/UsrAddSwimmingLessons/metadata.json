@@ -1312,7 +1312,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "return true;",
+          "CH1": "Terrasoft.Configuration.MsgChannelUtilities.PostMessage(UserConnection, \"UpdateSwimmingLessonsDetail\", \"UpdateSwimmingLessonsDetail\");\nreturn true;",
           "CH2": true
         },
         {

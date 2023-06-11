@@ -2,6 +2,12 @@ define("UsrSwimmingPrograms1Page", ["ProcessModuleUtilities"], function(ProcessM
 	return {
 		entitySchemaName: "UsrSwimmingPrograms",
 		attributes: {},
+		messages:{
+			"UpdateSwimmingLessonsDetail": {
+				"mode": Terrasoft.MessageMode.BROADCAST,
+				"direction": Terrasoft.MessageDirectionType.SUBSCRIBE
+			},
+		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{
 			"Files": {
@@ -23,6 +29,16 @@ define("UsrSwimmingPrograms1Page", ["ProcessModuleUtilities"], function(ProcessM
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
+			init: function() {
+				this.callParent(arguments);
+				this.subscribeSanboxEvents();
+			},
+			subscribeSanboxEvents: function() {
+				this.sandbox.subscribe("UpdateSwimmingLessonsDetail", this.UpdateSwimmingLessonsDetailHandler, this);
+			},
+			UpdateSwimmingLessonsDetailHandler:function(scope,message){
+				this.updateDetail({detail: "UsrSwimmingLessonsSchemaDetail"});
+			},
 			getActions: function() {
 				var actionMenuItems = this.callParent(arguments);
 				actionMenuItems.addItem(this.getButtonMenuItem({

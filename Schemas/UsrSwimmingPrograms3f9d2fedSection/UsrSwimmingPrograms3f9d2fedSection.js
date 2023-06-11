@@ -3,6 +3,10 @@ define("UsrSwimmingPrograms3f9d2fedSection", [], function() {
 		entitySchemaName: "UsrSwimmingPrograms",
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
 		diff: /**SCHEMA_DIFF*/[]/**SCHEMA_DIFF*/,
-		methods: {}
+		methods: {
+			addSwimmingLessons:function(){
+				this.sandbox.publish("OnCardAction", "addSwimmingLessons", [this.getCardModuleSandboxId()]);
+			}
+		}
 	};
 });
