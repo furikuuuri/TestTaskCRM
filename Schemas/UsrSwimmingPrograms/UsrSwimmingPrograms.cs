@@ -28,8 +28,8 @@ namespace Terrasoft.Configuration
 			var code = Entity.GetTypedColumnValue<string>("UsrCode");
             if (IsAnyProgramWithSameCode(code, Entity.PrimaryColumnValue))
             {
-				throw new Exception($"Программа плавания с кодом {code} уже существует");
-            }
+				throw new Exception($"РџСЂРѕРіСЂР°РјРјР° РїР»Р°РІР°РЅРёСЏ СЃ РєРѕРґРѕРј  {code} СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
+			}
 		}
 		private bool IsAnyProgramWithSameCode(string code,Guid currentProgramId)
 		{

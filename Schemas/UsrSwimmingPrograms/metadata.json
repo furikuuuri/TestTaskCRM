@@ -20,9 +20,11 @@
   "A3": "9eadf536-2a49-4071-ae92-a6c941977b1f",
   "A4": "9eadf536-2a49-4071-ae92-a6c941977b1f",
   "A5": "5cac93b1-bb8d-7c22-e630-0425286fa032",
+  "BL3": "0;5",
   "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
   "BL8": "9eadf536-2a49-4071-ae92-a6c941977b1f",
   "BL9": "EntitySchemaManager",
+  "BM1": 0,
   "BM4": [
     {
       "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
